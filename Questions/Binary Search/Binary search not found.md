@@ -9,7 +9,7 @@ int main(){
   int arr[] = {1,2,3,4,5,6,7,8};
   int target = 6;
   int n = sizeof(arr)/sizeof(arr[0]);
-  int left=0, right=n-1;
+  int left=0, right=n-1, mid;
   while(left<=right){
     mid = (left+right)/2;
     if(arr[mid]==target) return mid;
