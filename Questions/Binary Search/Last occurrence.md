@@ -20,6 +20,7 @@ int main(){
     else if(arr[mid]>target) right=mid-1;
     else left=mid+1;
   }
+  cout << index;
   return 0;
 }
 ```
