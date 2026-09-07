@@ -8,7 +8,8 @@ Given an integer array and a target value, find the index of the target using Li
 int main(){
   int arr[] = {1,2,3,4,5,6};
   int target = 4;
-  for(int i=0; i<arr.size(); i++){
+  int size = sizeof(arr)/sizeof(arr[0]);
+  for(int i=0; i<size; i++){
     if(arr[i] == target){
       cout << i;
       break;
